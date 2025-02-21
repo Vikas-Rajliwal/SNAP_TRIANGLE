@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skoop AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .navbar{
+    background-color: #0a0b1a;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+    background: color #0a0b1a;
+    color: aliceblue;
+    }</style>
+  </head>
+  <body>
+    
+    <nav class="navbar" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    ">
+      <!-- Left side -->
+      <div class="left-side">
+        <h1>Skoop AI</h1>
+      </div>
+
+      <!-- Right side with 3 sections -->
+      <div class="right-side" style="display: flex; gap: 20px">
+        <div class="section">
+          <a
+            href="#"
+            style="text-decoration: none; color: inherit; font-size: 24px"
+            >feature</a
+          >
+        </div>
+        <div class="section">
+          <a
+            href="#"
+            style="text-decoration: none; color: inherit; font-size: 24px"
+            >Contact Us</a
+          >
+        </div>
+        <div class="section">
+          <button
+            style="
+              background-color: #4caf50;
+              color: white;
+              border: none;
+              padding: 8px 16px;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            viewport
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section style="padding: 50px 20px;">
+      <div style="
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        align-items: center;
+      ">
+        <!-- Left Section -->
+        <div style="padding: 20px;">
+          <p style="
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+          ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <button style="
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+          ">
+            Learn More
+          </button>
+        </div>
+
+        <!-- Right Section with Overlapping Images -->
+        <div style="
+          position: relative;
+          height: 400px;
+          padding: 20px;
+        ">
+          <img src="./assests/Dashboard.jpg" style="
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 2;
+          ">
+          <img src="./assests/Screenshot 2025-01-27 052258.png" style="
+            position: absolute;
+            top: 105px;
+            right: 65px;
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 1;
+          ">
+        </div>
+      </div>
+    </section>
+    <section style="padding: 50px 20px; background-color: #f8f9fa;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <div style="display: flex; justify-content: space-between; gap: 20px;">
+            
+            <!-- Box 1 -->
+            <div style="flex: 1; padding: 25px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <h3 style="color: #0a0b1a; margin-bottom: 15px; font-size: 1.5rem;">Innovation</h3>
+              <p style="color: #666; line-height: 1.6;">Driving technological advancement through creative solutions and cutting-edge development.</p>
+            </div>
+  
+            <!-- Box 2 -->
+            <div style="flex: 1; padding: 25px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <h3 style="color: #0a0b1a; margin-bottom: 15px; font-size: 1.5rem;">Security</h3>
+              <p style="color: #666; line-height: 1.6;">Enterprise-grade protection ensuring your data remains safe and confidential.</p>
+            </div>
+  
+            <!-- Box 3 -->
+            <div style="flex: 1; padding: 25px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <h3 style="color: #0a0b1a; margin-bottom: 15px; font-size: 1.5rem;">Scalability</h3>
+              <p style="color: #666; line-height: 1.6;">Flexible solutions that grow with your business needs and requirements.</p>
+            </div>
+  
+            <!-- Box 4 -->
+            <div style="flex: 1; padding: 25px; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <h3 style="color: #0a0b1a; margin-bottom: 15px; font-size: 1.5rem;">Support</h3>
+              <p style="color: #666; line-height: 1.6;">24/7 dedicated customer support to assist you every step of the way.</p>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+    <section style="padding: 50px 20px; background-color: #fff;">
+      <div style="
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      ">
+        <!-- Left Content Section -->
+        <div style="flex: 1;">
+          <h2 style="
+            font-size: 2.5rem;
+            color: #0a0b1a;
+            margin-bottom: 20px;
+          ">Transforming Your Business</h2>
+          <p style="
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+          ">
+            Our innovative solutions help businesses streamline their operations, improve efficiency, and drive growth. With cutting-edge technology and expert support, we empower organizations to achieve their digital transformation goals.
+          </p>
+          <p style="
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+          ">
+            From advanced analytics to cloud computing, our comprehensive suite of services is designed to meet the evolving needs of modern enterprises. Experience the power of digital innovation with our state-of-the-art solutions.
+          </p>
+          <button style="
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          ">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Right Image Section -->
+        <div style="
+          flex: 1;
+          position: relative;
+          height: 400px;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        ">
+          <img src="./assests/Dashboard.jpg" style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          " onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+        </div>
+      </div>
+    </section>
+   
+
+    <section style="padding: 50px 20px; background-color: #f8f9fa;">
+      <div style="max-width: 1200px; margin: 0 auto;">
+       
+
+        <div style="
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px;
+        ">
+          <!-- Hover Headings Section -->
+          <div>
+            <div style="
+              position: relative;
+              margin-bottom: 30px;
+              cursor: pointer;
+            " 
+            onmouseover="this.querySelector('.hover-line').style.width='100%'"
+            onmouseout="this.querySelector('.hover-line').style.width='0'">
+              <h2 style="font-size: 2rem; color: #0a0b1a;">Artificial Intelligence</h2>
+              <div class="hover-line" style="
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background-color: #4caf50;
+                transition: width 0.3s ease;
+              "></div>
+              <p style="
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                color: #666;
+              " onmouseover="this.style.maxHeight='100px'">
+                Leveraging cutting-edge AI technology for innovative solutions.
+              </p>
+            </div>
+
+            <div style="
+              position: relative;
+              margin-bottom: 30px;
+              cursor: pointer;
+            "
+            onmouseover="this.querySelector('.hover-line').style.width='100%'"
+            onmouseout="this.querySelector('.hover-line').style.width='0'">
+              <h2 style="font-size: 2rem; color: #0a0b1a;">Machine Learning</h2>
+              <div class="hover-line" style="
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background-color: #4caf50;
+                transition: width 0.3s ease;
+              "></div>
+              <p style="
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                color: #666;
+              " onmouseover="this.style.maxHeight='100px'">
+                Advanced algorithms that learn and adapt to your needs.
+              </p>
+            </div>
+
+            <div style="
+              position: relative;
+              margin-bottom: 30px;
+              cursor: pointer;
+            "
+            onmouseover="this.querySelector('.hover-line').style.width='100%'"
+            onmouseout="this.querySelector('.hover-line').style.width='0'">
+              <h2 style="font-size: 2rem; color: #0a0b1a;">Data Analytics</h2>
+              <div class="hover-line" style="
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background-color: #4caf50;
+                transition: width 0.3s ease;
+              "></div>
+              <p style="
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                color: #666;
+              " onmouseover="this.style.maxHeight='100px'">
+                Transform raw data into actionable insights.
+              </p>
+            </div>
+
+            <div style="
+              position: relative;
+              margin-bottom: 30px;
+              cursor: pointer;
+            "
+            onmouseover="this.querySelector('.hover-line').style.width='100%'"
+            onmouseout="this.querySelector('.hover-line').style.width='0'">
+              <h2 style="font-size: 2rem; color: #0a0b1a;">Cloud Solutions</h2>
+              <div class="hover-line" style="
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background-color: #4caf50;
+                transition: width 0.3s ease;
+              "></div>
+              <p style="
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                color: #666;
+              " onmouseover="this.style.maxHeight='100px'">
+                Scalable cloud infrastructure for your growing needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hover Images Section -->
+          <div style="
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          "
+          onmouseover="this.querySelector('.hover-image').style.opacity='1'"
+          onmouseout="this.querySelector('.hover-image').style.opacity='0'">
+            <img src="./assests/Dashboard.jpg"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+              "
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+            <!-- <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop"
+              alt="AI Technology"
+              class="hover-image"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+              "
+            /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <style>
+      .feature-card {
+        background-color: #0a0b1a !important;
+        color: aliceblue !important;
+      }
+      .feature-card h3 {
+        color: aliceblue !important;
+      }
+      .feature-card p {
+        color: aliceblue !important;
+      }
+    </style>
+    <section style="padding: 50px 20px; background-color: #fff;">
+      <div style="max-width: 1200px; margin: 0 auto;">
+        <div style="
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        ">
+          <!-- Photo Card 1 -->
+          <div style="
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+          ">
+            <img src="./assests/Screenshot 2025-02-03 054836.png" style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='scale(1.1)'; this.parentElement.querySelector('.hover-text').style.opacity='1'"
+               onmouseout="this.style.transform='scale(1)'; this.parentElement.querySelector('.hover-text').style.opacity='0'">
+            <div class="hover-text" style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              padding: 20px;
+              background: rgba(0,0,0,0.7);
+              color: white;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            ">
+              <h3 style="margin-bottom: 10px;">AI Analytics</h3>
+              <p>Advanced analytics powered by artificial intelligence</p>
+            </div>
+          </div>
+
+          <!-- Photo Card 2 -->
+          <div style="
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+          ">
+            <img src="./assests/Screenshot 2025-02-03 081018.png" style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='scale(1.1)'; this.parentElement.querySelector('.hover-text').style.opacity='1'"
+               onmouseout="this.style.transform='scale(1)'; this.parentElement.querySelector('.hover-text').style.opacity='0'">
+            <div class="hover-text" style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              padding: 20px;
+              background: rgba(0,0,0,0.7);
+              color: white;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            ">
+              <h3 style="margin-bottom: 10px;">Machine Learning</h3>
+              <p>Smart solutions for complex problems</p>
+            </div>
+          </div>
+
+          <!-- Photo Card 3 -->
+          <div style="
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+          ">
+            <img src="./assests/Screenshot 2025-01-27 053859.png" style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='scale(1.1)'; this.parentElement.querySelector('.hover-text').style.opacity='1'"
+               onmouseout="this.style.transform='scale(1)'; this.parentElement.querySelector('.hover-text').style.opacity='0'">
+            <div class="hover-text" style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              padding: 20px;
+              background: rgba(0,0,0,0.7);
+              color: white;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            ">
+              <h3 style="margin-bottom: 10px;">Cloud Computing</h3>
+              <p>Scalable cloud infrastructure solutions</p>
+            </div>
+          </div>
+
+          <!-- Photo Card 4 -->
+          <div style="
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+          ">
+            <img src="./assests/Screenshot 2025-01-27 053920.png" style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='scale(1.1)'; this.parentElement.querySelector('.hover-text').style.opacity='1'"
+               onmouseout="this.style.transform='scale(1)'; this.parentElement.querySelector('.hover-text').style.opacity='0'">
+            <div class="hover-text" style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              padding: 20px;
+              background: rgba(0,0,0,0.7);
+              color: white;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            ">
+              <h3 style="margin-bottom: 10px;">Data Security</h3>
+              <p>Enterprise-grade security solutions</p>
+            </div>
+          </div>
+          <!-- Photo Card 6 -->
+          <div style="
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+          ">
+            <img src="./assests/Screenshot 2025-02-03 055402.png" style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='scale(1.1)'; this.parentElement.querySelector('.hover-text').style.opacity='1'"
+               onmouseout="this.style.transform='scale(1)'; this.parentElement.querySelector('.hover-text').style.opacity='0'">
+            <div class="hover-text" style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              padding: 20px;
+              background: rgba(0,0,0,0.7);
+              color: white;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            ">
+              <h3 style="margin-bottom: 10px;">Machine Learning</h3>
+              <p>Advanced AI and ML Solutions</p>
+            </div>
+          </div>
+
+          <!-- Photo Card 5 -->
+          <div style="
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+          ">
+            <img src="./assests/Screenshot 2025-02-03 063918.png" style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            " onmouseover="this.style.transform='scale(1.1)'; this.parentElement.querySelector('.hover-text').style.opacity='1'"
+               onmouseout="this.style.transform='scale(1)'; this.parentElement.querySelector('.hover-text').style.opacity='0'">
+            <div class="hover-text" style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              padding: 20px;
+              background: rgba(0,0,0,0.7);
+              color: white;
+              opacity: 0;
+              transition: opacity 0.3s ease;
+            ">
+              <h3 style="margin-bottom: 10px;">Digital Innovation</h3>
+              <p>Cutting-edge digital transformation</p>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section style="padding: 50px 20px; background-color: #fff;">
+      <div style="
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      ">
+        <!-- Left Content Section -->
+        <div style="flex: 1;">
+          <h2 style="
+            font-size: 2.5rem;
+            color: #0a0b1a;
+            margin-bottom: 30px;
+          ">Why Choose Skoop AI?</h2>
+          
+          <ul style="list-style-type: none;">
+            <li style="
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              color: #666;
+              font-size: 1.1rem;
+            ">
+              <span style="
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: #4caf50;
+                border-radius: 50%;
+                margin-right: 15px;
+              "></span>
+              Advanced AI algorithms that adapt to your business needs
+            </li>
+            
+            <li style="
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              color: #666;
+              font-size: 1.1rem;
+            ">
+              <span style="
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: #4caf50;
+                border-radius: 50%;
+                margin-right: 15px;
+              "></span>
+              Real-time data analytics and insights
+            </li>
+            
+            <li style="
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              color: #666;
+              font-size: 1.1rem;
+            ">
+              <span style="
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: #4caf50;
+                border-radius: 50%;
+                margin-right: 15px;
+              "></span>
+              Enterprise-grade security and compliance
+            </li>
+            
+            <li style="
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              color: #666;
+              font-size: 1.1rem;
+            ">
+              <span style="
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: #4caf50;
+                border-radius: 50%;
+                margin-right: 15px;
+              "></span>
+              24/7 dedicated customer support
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Image Section -->
+        <div style="
+          flex: 1;
+          position: relative;
+          height: 400px;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        ">
+          <img src="./assests/MacBook Pro 14_ - 8.png" style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          " onmouseover="this.style.transform='scale(1.05)'"
+             onmouseout="this.style.transform='scale(1)'">
+        </div>
+      </div>
+    </section>
+    <div
+      class="contact-container"
+      style="
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        background-color: #f5f5f5;
+      "
+    >
+      <!-- Email Section -->
+      <div
+        class="email-section"
+        style="
+          flex: 1;
+          padding: 20px;
+          background: white;
+          border-radius: 10px;
+          margin-right: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <h2 style="margin-bottom: 20px; color: #0a0b1a">Contact Us</h2>
+        <form style="display: flex; flex-direction: column; gap: 15px">
+          <input
+            type="text"
+            placeholder="Your Name"
+            style="padding: 10px; border: 1px solid #ddd; border-radius: 5px"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            style="padding: 10px; border: 1px solid #ddd; border-radius: 5px"
+          />
+          <textarea
+            placeholder="Your Message"
+            style="
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              height: 150px;
+            "
+          ></textarea>
+          <button
+            type="submit"
+            style="
+              background-color: #4caf50;
+              color: white;
+              border: none;
+              padding: 12px;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div
+        class="links-section"
+        style="
+          flex: 1;
+          padding: 20px;
+          background: white;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <h2 style="margin-bottom: 20px; color: #0a0b1a">Quick Links</h2>
+        <div style="display: flex; flex-direction: column; gap: 15px">
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              color: #0a0b1a;
+              font-size: 18px;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+            "
+            >Home</a
+          >
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              color: #0a0b1a;
+              font-size: 18px;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+            "
+            >Features</a
+          >
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              color: #0a0b1a;
+              font-size: 18px;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+            "
+            >About Us</a
+          >
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              color: #0a0b1a;
+              font-size: 18px;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+            "
+            >Services</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer style="
+      background-color: #0a0b1a;
+      color: aliceblue;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+    ">
+      <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+        <div>
+          &copy; 2024 All Rights Reserved
+        </div>
+        <div>
+          Contact Us: <a href="mailto:contact@example.com" style="color: aliceblue; text-decoration: none;">abc@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
